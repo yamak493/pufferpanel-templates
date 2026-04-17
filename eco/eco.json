@@ -6,40 +6,40 @@
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the Eco game server to.",
+      "display": "IPプロトコル",
+      "desc": "EcoゲームサーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": false
     },
     "password": {
       "type": "string",
       "value": "",
-      "display": "Password",
-      "desc": "Password for the Eco Game Server, which will be required for login.",
+      "display": "パスワード",
+      "desc": "Ecoゲームサーバーへのログイン用パスワード",
       "required": false,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 3000,
-      "display": "Game-Server Port",
-      "desc": "What port to bind the server to",
+      "display": "ゲームサーバーポート",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     },
     "serverVersion": {
       "type": "string",
       "value": "0.7.7.2-beta",
-      "display": "Server Version",
-      "desc": "Version of Eco server to install.",
+      "display": "サーバーバージョン",
+      "desc": "インストールするEcoサーバーのバージョン",
       "required": true,
       "userEdit": true
     },
     "webServerPort": {
       "type": "integer",
       "value": 3001,
-      "display": "Web-Server Port",
-      "desc": "What port to bind the Eco web server to.",
+      "display": "Webサーバーポート",
+      "desc": "Ecoウェブサーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     }

@@ -5,40 +5,40 @@
     "modpack": {
       "type": "string",
       "value": "",
-      "display": "Modpack to run with",
-      "desc": "Open https://valheim.thunderstore.io/package/denikson/BepInExPack_Valheim/ in new tab and right 'manual download' click > copy link. Paste it here if you wish to use this modpack.",
+      "display": "使用するModパック(BepInEx)",
+      "desc": "https://valheim.thunderstore.io/package/denikson/BepInExPack_Valheim/ を開き、「manual download」を右クリックしてリンクをコピーし、ここに貼り付けてください（Modを使用する場合）。",
       "required": false,
       "userEdit": true
     },
     "name": {
       "type": "string",
       "value": "Valheim Server",
-      "display": "Name",
-      "desc": "Choose your servername.",
+      "display": "サーバー名",
+      "desc": "サーバーの表示名を設定します。",
       "required": true,
       "userEdit": true
     },
     "password": {
       "type": "string",
       "value": "valheim",
-      "display": "Password",
-      "desc": "Set the server password.",
+      "display": "パスワード",
+      "desc": "サーバーの参加パスワードを設定します。",
       "required": true,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 2456,
-      "display": "Port",
-      "desc": "What port to bind the server to.",
+      "display": "ポート番号",
+      "desc": "サーバーをバインドするポート番号。",
       "required": true,
       "userEdit": false
     },
     "world": {
       "type": "string",
       "value": "VHWorld",
-      "display": "World",
-      "desc": "What worldmap name to use.",
+      "display": "ワールド名",
+      "desc": "使用するワールドマップの名前を設定します。",
       "required": true,
       "userEdit": true
     }

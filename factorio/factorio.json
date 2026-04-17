@@ -6,32 +6,32 @@
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPプロトコル",
+      "desc": "サーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 34197,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     },
     "save": {
       "type": "string",
       "value": "saves/default.zip",
-      "display": "Save File to Use",
-      "desc": "Save File to Use",
+      "display": "使用するセーブファイル",
+      "desc": "読み込むセーブファイル（パス名）",
       "required": true,
       "userEdit": true
     },
     "server-settings": {
       "type": "string",
       "value": "factorio/data/server-settings.json",
-      "display": "Server Settings JSON",
-      "desc": "Server Settings File Location",
+      "display": "サーバー設定JSON",
+      "desc": "サーバー設定ファイル（server-settings.json）の場所",
       "required": true,
       "userEdit": true
     }

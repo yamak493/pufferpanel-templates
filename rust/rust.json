@@ -6,96 +6,96 @@
     "Description": {
       "type": "string",
       "value": "RUST Public Server Description",
-      "display": "Server Description",
-      "desc": "Server description shown on server browser",
+      "display": "サーバーの説明欄",
+      "desc": "サーバーブラウザに表示されるサーバーの説明文です",
       "required": true,
       "userEdit": true
     },
     "MaxPlayers": {
       "type": "integer",
       "value": 10,
-      "display": "Max Players",
-      "desc": "Maximum number of players to support",
+      "display": "最大プレイヤー数",
+      "desc": "サーバーが許容する最大接続人数です",
       "required": true,
       "userEdit": false
     },
     "RConPassword": {
       "type": "string",
       "value": "",
-      "display": "RCON Password",
-      "desc": "Password to use on RCON. CHANGE THIS",
+      "display": "RCONパスワード",
+      "desc": "RCON（リモートコンソール）で使用するパスワードです。必ず変更してください",
       "required": true,
       "userEdit": true
     },
     "RConPort": {
       "type": "integer",
       "value": 28016,
-      "display": "RCON Port",
-      "desc": "Port to use for RCON",
+      "display": "RCONポート",
+      "desc": "RCON接続に使用するポート番号です",
       "required": true,
       "userEdit": false
     },
     "ServerIdentity": {
       "type": "string",
       "value": "server1",
-      "display": "Server identity",
-      "desc": "Server identity to use, leave as default unless you know what you're doing",
+      "display": "サーバー識別子 (Server Identity)",
+      "desc": "サーバーの識別用名称です。よく分からない場合はデフォルトのままにしてください",
       "required": true,
       "userEdit": false
     },
     "ServerImage": {
       "type": "string",
       "value": "http://",
-      "display": "Server Header Image",
-      "desc": "URL For the server image banner",
+      "display": "サーバーヘッダー画像",
+      "desc": "サーバー詳細に表示されるバナー画像のURLを指定します",
       "required": true,
       "userEdit": true
     },
     "ServerLevel": {
       "type": "string",
       "value": "Procedural Map",
-      "display": "Server Level",
-      "desc": "What map name do you want? If unsure, leave as default.",
+      "display": "サーバーレベル（マップ）",
+      "desc": "使用するマップ名を指定します。不明な場合はデフォルトのままにしてください",
       "required": true,
       "userEdit": true
     },
     "ServerName": {
       "type": "string",
       "value": "RUST Public Server",
-      "display": "Server Name",
-      "desc": "Name of the server to use",
+      "display": "サーバー名",
+      "desc": "サーバーブラウザに表示される名称を設定します",
       "required": true,
       "userEdit": true
     },
     "ServerSeed": {
       "type": "string",
       "value": "1234",
-      "display": "Server Seed",
-      "desc": "Server seed to use. Default should be fine.",
+      "display": "サーバーシード値",
+      "desc": "マップ生成に使用するシード値です。デフォルトでも問題ありません",
       "required": true,
       "userEdit": true
     },
     "URL": {
       "type": "string",
       "value": "http://",
-      "display": "Server Website",
-      "desc": "URL for the website dedicated to this server.",
+      "display": "サーバーWebサイト",
+      "desc": "このサーバー専用のWebサイト等がある場合にURLを指定します",
       "required": true,
       "userEdit": true
     },
     "WorldSize": {
       "type": "integer",
       "value": 3000,
-      "display": "World Size",
-      "desc": "World size (number)",
+      "display": "ワールドサイズ",
+      "desc": "ワールドの広さを指定します（数値）",
       "required": true,
       "userEdit": true
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPプロトコル",
+      "desc": "サーバーをバインドするIPアドレスを指定します",
       "required": true,
       "userEdit": false
     },

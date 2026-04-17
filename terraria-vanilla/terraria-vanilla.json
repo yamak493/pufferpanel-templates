@@ -6,204 +6,204 @@
     "abr": {
       "type": "string",
       "value": "-1",
-      "display": "announcementbox-range",
-      "desc": "Sets the announcementbox text messaging range in pixels, -1 for serverwide announcements.",
+      "display": "アナウンスボックス範囲",
+      "desc": "アナウンスボックスのメッセージ送信範囲をピクセル単位で指定します。-1でサーバー全体になります。",
       "required": true,
       "userEdit": true
     },
     "backups": {
       "type": "string",
       "value": "2",
-      "display": "Backups",
-      "desc": "Sets the number of rolling world backups to keep",
+      "display": "バックアップ数",
+      "desc": "保持するワールドの世代バックアップ数を設定します。",
       "required": true,
       "userEdit": true
     },
     "ban": {
       "type": "string",
       "value": "banlist.txt",
-      "display": "Banlist",
-      "desc": "Name of the banlist file",
+      "display": "BANリスト",
+      "desc": "BANリストファイルの名前",
       "required": true,
       "userEdit": true
     },
     "difficulty": {
       "type": "string",
       "value": "0",
-      "display": "Difficulty",
-      "desc": "This can not be changed after the world was generated",
+      "display": "難易度",
+      "desc": "ワールド生成後は変更できません。",
       "required": true,
       "userEdit": true,
       "options": [
         {
           "value": "0",
-          "display": "Normal"
+          "display": "ノーマル"
         },
         {
           "value": "1",
-          "display": "Expert"
+          "display": "エキスパート"
         },
         {
           "value": "2",
-          "display": "Master"
+          "display": "マスター"
         },
         {
           "value": "3",
-          "display": "Journey"
+          "display": "ジャーニー"
         }
       ]
     },
     "disableannouncementbox": {
       "type": "string",
       "value": "",
-      "display": "Announcement Box",
-      "desc": "Decides if the text announcements the Announcement Box makes when pulsed from wire.",
+      "display": "アナウンスボックス",
+      "desc": "配線からのパルスを受け取った際のアナウンスボックスの有効/無効を設定します。",
       "required": false,
       "userEdit": true,
       "options": [
         {
           "value": "",
-          "display": "Enable"
+          "display": "有効"
         },
         {
           "value": "-disableannouncementbox",
-          "display": "Disable"
+          "display": "無効"
         }
       ]
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "Sets the IP address for the server to listen on - 0.0.0.0 means every possible IP",
+      "display": "IPアドレス",
+      "desc": "サーバーが待ち受けるIPアドレス。0.0.0.0は全てのIPを意味します。",
       "required": true,
       "userEdit": false
     },
     "lang": {
       "type": "string",
       "value": "en-US",
-      "display": "Language",
-      "desc": "Language for the server",
+      "display": "言語",
+      "desc": "サーバーの言語設定",
       "required": true,
       "userEdit": true,
       "options": [
         {
           "value": "en-US",
-          "display": "English"
+          "display": "英語"
         },
         {
           "value": "de-DE",
-          "display": "German"
+          "display": "ドイツ語"
         },
         {
           "value": "it-IT",
-          "display": "Italian"
+          "display": "イタリア語"
         },
         {
           "value": "fr-FR",
-          "display": "French"
+          "display": "フランス語"
         },
         {
           "value": "es-ES",
-          "display": "Spanish"
+          "display": "スペイン語"
         },
         {
           "value": "ru-RU",
-          "display": "Russian"
+          "display": "ロシア語"
         },
         {
           "value": "zh-Hans",
-          "display": "Chinese"
+          "display": "中国語"
         },
         {
           "value": "pt-PR",
-          "display": "Portuguese"
+          "display": "ポルトガル語"
         },
         {
           "value": "pl-PL",
-          "display": "Polish"
+          "display": "ポーランド語"
         }
       ]
     },
     "motd": {
       "type": "string",
       "value": "Hello!",
-      "display": "motd",
-      "desc": "Set the message of the day",
+      "display": "サーバーメッセージ（MOTD）",
+      "desc": "今日のメッセージを設定します",
       "required": true,
       "userEdit": true
     },
     "npcs": {
       "type": "string",
       "value": "60",
-      "display": "npcstream",
-      "desc": "Reduces enemy skipping but increases bandwidth usage. The lower the number the less skipping will happen, but more data is sent. 0 is off.",
+      "display": "NPCストリーム（同期速度）",
+      "desc": "敵がワープする現象を軽減しますが、帯域幅の使用量が増加します。数値が低いほどワープは少なくなりますが、より多くのデータが送信されます。0はオフです。",
       "required": true,
       "userEdit": true
     },
     "password": {
       "type": "string",
       "value": "",
-      "display": "Password",
-      "desc": "Server Password - leave blank for none",
+      "display": "パスワード",
+      "desc": "サーバーのパスワード - 空欄でパスワードなしになります",
       "required": true,
       "userEdit": true
     },
     "players": {
       "type": "string",
       "value": "4",
-      "display": "Players",
-      "desc": "Max Players",
+      "display": "最大プレイヤー数",
+      "desc": "最大プレイヤー数",
       "required": true,
       "userEdit": true
     },
     "port": {
       "type": "string",
       "value": "7777",
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート",
+      "desc": "サーバーがバインドするポート",
       "required": true,
       "userEdit": false
     },
     "secure": {
       "type": "string",
       "value": "1",
-      "display": "secure",
-      "desc": "Enable cheat protection = 1 and disable = 0",
+      "display": "チート防止設定",
+      "desc": "有効なら1、無効なら0を設定します",
       "required": true,
       "userEdit": true,
       "options": [
         {
           "value": "1",
-          "display": "Enable"
+          "display": "有効"
         },
         {
           "value": "0",
-          "display": "Disable"
+          "display": "無効"
         }
       ]
     },
     "seed": {
       "type": "string",
       "value": "VeryGoodStartingSeed",
-      "display": "Seed",
-      "desc": "This can not be changed after the world was generated - Seed of the World",
+      "display": "シード値",
+      "desc": "ワールド生成後は変更できません。ワールドのシード値です。",
       "required": true,
       "userEdit": true
     },
     "size": {
       "type": "string",
       "value": "3",
-      "display": "World-Size",
-      "desc": "This can not be changed after the world was generated - World Size (1-3 - 3 is biggest)",
+      "display": "ワールドサイズ",
+      "desc": "ワールド生成後は変更できません。ワールドサイズ (1-3、3が最大) です。",
       "required": true,
       "userEdit": true
     },
     "sl": {
       "type": "string",
       "value": "1",
-      "display": "maximum liquids moving",
-      "desc": "Reduces maximum liquids moving at the same time. If enabled may reduce lags but liquids may take longer to settle.",
+      "display": "液体の移動制限",
+      "desc": "同時に移動する液体の最大量を制限します。有効にするとラグが軽減される場合がありますが、液体が落ち着くまでに時間がかかるようになります。",
       "required": true,
       "userEdit": true
     },
@@ -211,41 +211,41 @@
       "type": "string",
       "value": "-steam",
       "display": "Steam",
-      "desc": "Enables Steam Support",
+      "desc": "Steamサポートを有効にします",
       "required": false,
       "userEdit": true,
       "options": [
         {
           "value": "-steam",
-          "display": "Enable"
+          "display": "有効"
         },
         {
           "value": "",
-          "display": "Disable"
+          "display": "無効"
         }
       ]
     },
     "version": {
       "type": "string",
       "value": "1449",
-      "display": "Server Version (Set this to the latest server version) - It is the current terraria Version without the Points (Client Version: 1.4.3.2 -> Server Version: 1432)",
-      "desc": "Server Version",
+      "display": "サーバーバージョン（最新のサーバーバージョンを設定してください） - ドットなしのTerrariaバージョンです（クライアント 1.4.3.2 -> サーバー 1432）",
+      "desc": "サーバーバージョン",
       "required": true,
       "userEdit": true
     },
     "world": {
       "type": "string",
       "value": "Terraria-World-1",
-      "display": "World-Name",
-      "desc": "Name of your World",
+      "display": "ワールド名",
+      "desc": "ワールドの名前",
       "required": true,
       "userEdit": true
     },
     "wp": {
       "type": "string",
       "value": "worlds",
-      "display": "Worldpath",
-      "desc": "Name of the world folder",
+      "display": "ワールドパス",
+      "desc": "ワールドフォルダの名前",
       "required": true,
       "userEdit": true
     }

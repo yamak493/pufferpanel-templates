@@ -6,32 +6,32 @@
     "config": {
       "type": "string",
       "value": "config.cfg",
-      "display": "Config File",
-      "desc": "The Config file you want to use. NOTE: config.cfg is created on server installation!",
+      "display": "構成ファイル (Config File)",
+      "desc": "使用する構成ファイルを指定します。注：config.cfg はサーバーインストール時に作成されます！",
       "required": false,
       "userEdit": true
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPプロトコル",
+      "desc": "サーバーをバインドするIPアドレスです",
       "required": true,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 2302,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート番号",
+      "desc": "サーバーに使用するポート番号です",
       "required": true,
       "userEdit": false
     },
     "steam_user": {
       "type": "string",
       "value": "anonymous",
-      "display": "Steam User",
-      "desc": "Username for Steam login",
+      "display": "Steamユーザー名",
+      "desc": "Steamにログインするためのユーザー名です",
       "required": true,
       "userEdit": true
     }

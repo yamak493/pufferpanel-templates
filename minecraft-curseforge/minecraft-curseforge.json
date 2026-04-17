@@ -6,64 +6,64 @@
     "eula": {
       "type": "boolean",
       "value": false,
-      "display": "EULA Agreement (true/false)",
-      "desc": "Do you (or the server owner) agree to the <a href='https://account.mojang.com/documents/minecraft_eula'>Minecraft EULA?</a>",
+      "display": "EULAへの同意 (true/false)",
+      "desc": "<a href='https://account.mojang.com/documents/minecraft_eula'>Minecraft EULA</a> に同意しますか？",
       "required": true,
       "userEdit": true
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPアドレス",
+      "desc": "サーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": false
     },
     "javaversion": {
       "type": "string",
       "value": "17",
-      "display": "Java Version",
-      "desc": "Version of Java to use",
+      "display": "Javaバージョン",
+      "desc": "使用するJavaのバージョン",
       "required": true,
       "userEdit": true
     },
     "jvmArgs": {
       "type": "string",
       "value": "-Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true",
-      "display": "JVM Arguments",
-      "desc": "Extra JVM arguments to pass",
+      "display": "JVM引数",
+      "desc": "追加で渡すJVM引数",
       "required": false,
       "userEdit": false
     },
     "memory": {
       "type": "integer",
       "value": 1024,
-      "display": "Memory (MB)",
-      "desc": "How much memory in MB to allocate to the Java Heap",
+      "display": "メモリ (MB)",
+      "desc": "Javaヒープに割り当てるメモリ容量（MB単位）",
       "required": true,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 25565,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート番号",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     },
     "projectId": {
       "type": "integer",
       "value": 0,
-      "display": "Project Id",
-      "desc": "Project Id for the modpack desired. This is found on the modpack's webpage on the right side.",
+      "display": "プロジェクトID",
+      "desc": "対象ModパックのプロジェクトID。CurseForgeの各Modパックページの右側に記載されています。",
       "required": true,
       "userEdit": false
     },
     "fileId": {
       "type": "integer",
       "value": 0,
-      "display": "File Id",
-      "desc": "File Id for the modpack desired. This is found at the end of the URL for the specific file desired.",
+      "display": "ファイルID",
+      "desc": "対象ModパックのファイルID。各ファイル用URLの末尾に記載されている数値です。",
       "required": true,
       "userEdit": false
     }

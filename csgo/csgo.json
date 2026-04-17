@@ -6,88 +6,88 @@
     "clientport": {
       "type": "integer",
       "value": 27016,
-      "display": "Client Port",
-      "desc": "What port to bind the clientport to",
+      "display": "クライアントポート",
+      "desc": "クライアント接続に使用するポート番号です",
       "required": true,
       "userEdit": false
     },
     "gamemap": {
       "type": "string",
       "value": "de_dust2",
-      "display": "Map",
-      "desc": "Map to load by default",
+      "display": "マップ",
+      "desc": "初期状態で読み込むマップを指定します",
       "required": true,
       "userEdit": true
     },
     "gamemode": {
       "type": "integer",
       "value": 0,
-      "display": "Gamemode",
-      "desc": "(Advanced) Gamemode",
+      "display": "ゲームモード (Gamemode)",
+      "desc": "(上級者向け) ゲームモードを指定します",
       "required": true,
       "userEdit": true
     },
     "gametype": {
       "type": "integer",
       "value": 0,
-      "display": "Gametype",
-      "desc": "(Advanced) Gametype",
+      "display": "ゲームタイプ (Gametype)",
+      "desc": "(上級者向け) ゲームタイプを指定します",
       "required": true,
       "userEdit": true
     },
     "gslt": {
       "type": "string",
       "value": "",
-      "display": "GSLT Token",
-      "desc": "It is required to register your server, otherwise it can only be played on LAN. Visit http://steamcommunity.com/dev/managegameservers to get a token",
+      "display": "GSLTトークン",
+      "desc": "サーバーを公開するために必須です。未入力の場合はLAN内でのみプレイ可能です。http://steamcommunity.com/dev/managegameservers でトークンを取得してください",
       "required": true,
       "userEdit": true
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPプロトコル",
+      "desc": "サーバーをバインドするIPアドレスです",
       "required": true,
       "userEdit": false
     },
     "mapgroup": {
       "type": "string",
       "value": "mg_active",
-      "display": "Map group",
-      "desc": "(Advanced) Map group",
+      "display": "マップグループ",
+      "desc": "(上級者向け) マップグループを指定します",
       "required": true,
       "userEdit": true
     },
     "maxplayers": {
       "type": "integer",
       "value": 20,
-      "display": "Max Players",
-      "desc": "Max players allowed on server",
+      "display": "最大プレイヤー数",
+      "desc": "サーバーに参加可能な最大人数です",
       "required": true,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 27015,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート番号",
+      "desc": "サーバーに使用するポート番号です",
       "required": true,
       "userEdit": false
     },
     "tickrate": {
       "type": "integer",
       "value": 64,
-      "display": "Tickrate",
-      "desc": "Server tick rate",
+      "display": "チックレート (Tickrate)",
+      "desc": "サーバーのチックレートを設定します",
       "required": true,
       "userEdit": true
     },
     "tvport": {
       "type": "integer",
       "value": 27017,
-      "display": "GOTV Port",
-      "desc": "What port to bind the GOTV to",
+      "display": "GOTVポート",
+      "desc": "GOTVの配信に使用するポート番号です",
       "required": true,
       "userEdit": false
     }

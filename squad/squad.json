@@ -5,46 +5,46 @@
     "fixed_max_players": {
       "type": "integer",
       "value": 80,
-      "display": "Fixed Max Players",
-      "desc": "Player count cannot go higher than this",
+      "display": "固定最大プレイヤー数",
+      "desc": "プレイヤー数はこれより高く設定できません",
       "required": true,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 7787,
-      "display": "Port",
-      "desc": "Game server port",
+      "display": "ポート",
+      "desc": "ゲームサーバーのポート番号",
       "required": true,
       "userEdit": false
     },
     "query_port": {
       "type": "integer",
       "value": 27165,
-      "display": "Steam Query Port",
-      "desc": "Steam query port",
+      "display": "Steamクエリポート",
+      "desc": "Steamクエリ用のポート番号",
       "required": true,
       "userEdit": false
     },
     "random": {
       "type": "option",
       "value": "NONE",
-      "display": "Random",
-      "desc": "Randomize map rotation",
+      "display": "ランダム設定",
+      "desc": "マップローテーションをランダム化します",
       "required": true,
       "userEdit": false,
       "options": [
         {
           "value": "NONE",
-          "display": "None"
+          "display": "なし"
         },
         {
           "value": "FIRST",
-          "display": "First"
+          "display": "初回のみ"
         },
         {
           "value": "ALWAYS",
-          "display": "Always"
+          "display": "常に"
         }
       ]
     }

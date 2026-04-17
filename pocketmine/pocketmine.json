@@ -6,16 +6,16 @@
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPプロトコル",
+      "desc": "サーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 19132,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     }

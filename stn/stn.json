@@ -5,40 +5,40 @@
     "firstjoinmessage": {
       "type": "string",
       "value": "Welcome!",
-      "display": "Server First Join Message",
-      "desc": "The message displayed when someone joins the server for the first time",
+      "display": "初回参加メッセージ",
+      "desc": "プレイヤーが初めてサーバーに参加した際に表示されるメッセージ",
       "required": false,
       "userEdit": true
     },
     "password": {
       "type": "string",
       "value": "",
-      "display": "Server Password",
-      "desc": "Password for the server",
+      "display": "サーバーパスワード",
+      "desc": "サーバーに接続するためのパスワード",
       "required": false,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 9750,
-      "display": "Server Port",
-      "desc": "Port on which the server runs",
+      "display": "サーバーポート",
+      "desc": "サーバーが動作するポート番号",
       "required": true,
       "userEdit": false
     },
     "returnjoinmessage": {
       "type": "string",
       "value": "Welcome Back",
-      "display": "Returning Join Message",
-      "desc": "The message displayed when a returning player joins the server",
+      "display": "再参加メッセージ",
+      "desc": "再参加したプレイヤーに表示されるメッセージ",
       "required": false,
       "userEdit": true
     },
     "servername": {
       "type": "string",
       "value": "My Survive The Nights Server using PufferPanel",
-      "display": "Server Name",
-      "desc": "The name for the server",
+      "display": "サーバー名",
+      "desc": "サーバーの表示名",
       "required": true,
       "userEdit": true
     }

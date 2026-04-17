@@ -6,48 +6,48 @@
     "gamemode": {
       "type": "string",
       "value": "sandbox",
-      "display": "Gamemode",
-      "desc": "Gamemode to load",
+      "display": "ゲームモード",
+      "desc": "読み込むゲームモード",
       "required": true,
       "userEdit": true
     },
     "mapname": {
       "type": "string",
       "value": "gm_construct",
-      "display": "Map",
-      "desc": "Map to load by default",
+      "display": "マップ",
+      "desc": "デフォルトで読み込むマップ",
       "required": true,
       "userEdit": true
     },
     "maxplayers": {
       "type": "integer",
       "value": 20,
-      "display": "Max Players",
-      "desc": "Max players allowed on server",
+      "display": "最大プレイヤー数",
+      "desc": "サーバーへの最大同時参加人数",
       "required": true,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 27015,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     },
     "steamaccounttoken": {
       "type": "string",
       "value": "",
-      "display": "Steam Game Server Account Token",
-      "desc": "Token for a game server account. *optional* (Get one here: https://steamcommunity.com/dev/managegameservers)",
+      "display": "Steamゲームサーバーアカウントトークン",
+      "desc": "ゲームサーバーアカウント用のトークン。*任意* (こちらで取得可能: https://steamcommunity.com/dev/managegameservers)",
       "required": false,
       "userEdit": true
     },
     "wscollection": {
       "type": "string",
       "value": "",
-      "display": "Workshop Collection ID",
-      "desc": "Specify a ws collection the server should load. *optional*",
+      "display": "ワークショップコレクションID",
+      "desc": "サーバーが読み込むべきワークショップコレクションIDを指定します。*任意*",
       "required": false,
       "userEdit": true
     }

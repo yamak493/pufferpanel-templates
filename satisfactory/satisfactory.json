@@ -5,16 +5,16 @@
     "multihome": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "Multihome",
-      "desc": "Ip address to bind the server to",
+      "display": "マルチホーム",
+      "desc": "サーバーをバインドするIPアドレス",
       "required": false,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 15777,
-      "display": "ServerQueryPort",
-      "desc": "Port to bind the server to",
+      "display": "サーバークエリポート",
+      "desc": "サーバーをバインドするポート番号",
       "required": false,
       "userEdit": false
     }

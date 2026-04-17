@@ -5,8 +5,8 @@
     "mapname": {
       "type": "option",
       "value": "PEI",
-      "display": "Map",
-      "desc": "Server map.",
+      "display": "マップ",
+      "desc": "サーバーで使用するマップ",
       "required": false,
       "userEdit": true,
       "options": [
@@ -35,68 +35,68 @@
     "maxplayers": {
       "type": "integer",
       "value": 24,
-      "display": "Server slots",
-      "desc": "Slots",
+      "display": "サーバー枠数",
+      "desc": "最大プレイヤー数（スロット）",
       "required": false,
       "userEdit": false
     },
     "mode": {
       "type": "option",
       "value": "normal",
-      "display": "Mode",
-      "desc": "Game difficulty",
+      "display": "モード",
+      "desc": "ゲームの難易度設定",
       "required": true,
       "userEdit": true,
       "options": [
         {
           "value": "easy",
-          "display": "Easy"
+          "display": "イージー"
         },
         {
           "value": "normal",
-          "display": "Normal"
+          "display": "ノーマル"
         },
         {
           "value": "hard",
-          "display": "Hard"
+          "display": "ハード"
         }
       ]
     },
     "name": {
       "type": "string",
       "value": "Unturned Server",
-      "display": "Name",
-      "desc": "Server name",
+      "display": "サーバー名",
+      "desc": "サーバーの表示名",
       "required": true,
       "userEdit": true
     },
     "password": {
       "type": "string",
       "value": "",
-      "display": "Server password",
-      "desc": "Password users enter to join server",
+      "display": "サーバーパスワード",
+      "desc": "プレイヤーが参加するために入力するパスワード",
       "required": false,
       "userEdit": true
     },
     "perspective": {
       "type": "option",
       "value": "",
-      "display": "Perspective",
-      "desc": "Perspective of the server",
+      "display": "パースペクティブ（視点）",
+      "desc": "サーバーでの視点制限設定",
       "required": false,
       "userEdit": true,
       "options": [
         {
           "value": "First",
-          "display": "First"
+          "display": "一人称視点（First Person）"
         },
         {
           "value": "Third",
-          "display": "Third"
+          "display": "三人称視点（Third Person）"
         },
         {
           "value": "Both",
-          "display": "Both"
+          "display": "両方可能"
         },
         {
           "value": "Vehicle",

@@ -6,74 +6,74 @@
     "exclusive": {
       "type": "option",
       "value": "",
-      "display": "Exclusive?",
-      "desc": "Set to yes to only permit friends, leave no for public",
+      "display": "参加限定設定 (Exclusive)",
+      "desc": "フレンドのみの参加を許可する場合は 'Yes' (はい)、パブリック公開にする場合は 'No' (いいえ) を選択してください",
       "required": false,
       "userEdit": true,
       "options": [
         {
           "value": "",
-          "display": "No"
+          "display": "No (いいえ)"
         },
         {
           "value": "-exclusivejoin",
-          "display": "Yes"
+          "display": "Yes (はい)"
         }
       ]
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPプロトコル",
+      "desc": "サーバーをバインドするIPアドレスを指定します",
       "required": true,
       "userEdit": true
     },
     "mapname": {
       "type": "string",
       "value": "TheIsland",
-      "display": "Map Name",
-      "desc": "Name of the map",
+      "display": "マップ名",
+      "desc": "読み込むマップの名前を指定します",
       "required": true,
       "userEdit": true
     },
     "maxplayers": {
       "type": "integer",
       "value": 20,
-      "display": "Max Players",
-      "desc": "Maximum number of players",
+      "display": "最大プレイヤー数",
+      "desc": "同時接続可能な最大プレイヤー数を設定します",
       "required": true,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 7777,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "接続ポート",
+      "desc": "サーバーとの通信に使用するポート番号を指定します",
       "required": true,
       "userEdit": true
     },
     "queryport": {
       "type": "integer",
       "value": 27015,
-      "display": "Query Port",
-      "desc": "What port to listen for queries on",
+      "display": "クエリポート",
+      "desc": "サーバー情報の照会に使用するポート番号を指定します",
       "required": true,
       "userEdit": true
     },
     "serveradminpassword": {
       "type": "string",
       "value": "password",
-      "display": "Server Admin Password",
-      "desc": "Password for server admin",
+      "display": "管理者用パスワード",
+      "desc": "管理コマンド（admin command）を実行するためのパスワードです",
       "required": true,
       "userEdit": true
     },
     "sessionname": {
       "type": "string",
       "value": "My ARK Server",
-      "display": "Session Name",
-      "desc": "Name of server",
+      "display": "セッション名（サーバー名）",
+      "desc": "サーバー一覧に表示されるサーバー名です",
       "required": true,
       "userEdit": true
     }

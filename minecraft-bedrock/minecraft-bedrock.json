@@ -6,96 +6,96 @@
     "allow-cheats": {
       "type": "boolean",
       "value": false,
-      "display": "Allow Cheats",
-      "desc": "If true then cheats like commands can be used.",
+      "display": "チートを許可",
+      "desc": "有効にすると、コマンドなどのチート機能が使用可能になります。",
       "required": true,
       "userEdit": true
     },
     "default-player-permission-level": {
       "type": "string",
       "value": "member",
-      "display": "Default Permission Level",
-      "desc": "Permission level for new players joining for the first time.",
+      "display": "デフォルトの権限レベル",
+      "desc": "初めて参加するプレイヤーの権限レベルを設定します。",
       "required": true,
       "userEdit": true
     },
     "difficulty": {
       "type": "string",
       "value": "easy",
-      "display": "Difficulty",
-      "desc": "Sets the difficulty of the world.",
+      "display": "難易度",
+      "desc": "ワールドの難易度を設定します。",
       "required": true,
       "userEdit": true
     },
     "gamemode": {
       "type": "string",
       "value": "survival",
-      "display": "Gamemode",
-      "desc": "Sets the game mode for new players.",
+      "display": "ゲームモード",
+      "desc": "新しいプレイヤーのゲームモードを設定します。",
       "required": true,
       "userEdit": true
     },
     "level-name": {
       "type": "string",
       "value": "Bedrock level",
-      "display": "Level Name",
-      "desc": "Name of the World Folder",
+      "display": "レベル名（ワールド名）",
+      "desc": "ワールド保存フォルダの名前です。",
       "required": true,
       "userEdit": true
     },
     "level-seed": {
       "type": "string",
       "value": "",
-      "display": "Level Seed",
-      "desc": "Use to randomize the world",
+      "display": "ワールドシード値",
+      "desc": "ワールドをランダム生成する際のシード値を指定します（任意）。",
       "required": false,
       "userEdit": true
     },
     "max-players": {
       "type": "integer",
       "value": 10,
-      "display": "Max Players",
-      "desc": "The maximum number of players that can play on the server.",
+      "display": "最大プレイヤー数",
+      "desc": "サーバーに参加できる最大人数を設定します。",
       "required": true,
       "userEdit": true
     },
     "max-threads": {
       "type": "integer",
       "value": 0,
-      "display": "Max Threads",
-      "desc": "Maximum number of threads the server will try to use. If set to 0 or removed then it will use as many as possible.",
+      "display": "最大スレッド数",
+      "desc": "サーバーが使用する最大スレッド数。0（または未指定）の場合は可能な限り使用します。",
       "required": true,
       "userEdit": true
     },
     "online-mode": {
       "type": "boolean",
       "value": true,
-      "display": "Online Mode",
-      "desc": "Whether a player is required to be authenticated to XBox Live",
+      "display": "オンラインモード",
+      "desc": "プレイヤーにXBox Live認証を必須にするかどうかを設定します。",
       "required": true,
       "userEdit": true
     },
     "player-idle-timeout": {
       "type": "integer",
       "value": 30,
-      "display": "Player Idle Timeout",
-      "desc": "After a player has idled for this many minutes they will be kicked. If set to 0 then players can idle indefinitely.",
+      "display": "無操作タイムアウト",
+      "desc": "指定した分数プレイヤーが無操作の場合、サーバーから切断（キック）します。0に設定すると無期限になります。",
       "required": true,
       "userEdit": true
     },
     "server-name": {
       "type": "string",
       "value": "Dedicated Server",
-      "display": "Server Name",
-      "desc": "Used as the server name",
+      "display": "サーバー名",
+      "desc": "サーバー名として使用されます。",
       "required": true,
       "userEdit": true
     },
     "server-port": {
       "type": "integer",
       "value": 19132,
-      "display": "Server Port",
-      "desc": "Which IPv4 port the server should listen to.",
+      "display": "サーバーポート",
+      "desc": "サーバーが待ち受けるIPv4ポート番号。",
       "required": true,
       "userEdit": false
     },

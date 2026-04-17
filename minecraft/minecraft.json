@@ -6,62 +6,62 @@
     "eula": {
       "type": "boolean",
       "value": false,
-      "display": "EULA Agreement (true/false)",
-      "desc": "Do you (or the server owner) agree to the <a href='https://account.mojang.com/documents/minecraft_eula'>Minecraft EULA?</a>",
+      "display": "EULAへの同意 (true/false)",
+      "desc": "<a href='https://account.mojang.com/documents/minecraft_eula'>Minecraft EULA</a> に同意しますか？",
       "required": true,
       "userEdit": true
     },
     "forgebuild": {
       "type": "string",
       "value": "",
-      "display": "Forge Version",
-      "desc": "<a href='http://files.minecraftforge.net/#Downloads'>Version of Forge</a> to install. Example: `1.21.8-58.1.0`",
+      "display": "Forgeバージョン",
+      "desc": "インストールする <a href='http://files.minecraftforge.net/#Downloads'>Forgeのバージョン</a>。例: `1.21.8-58.1.0` (空白の場合は最新)",
       "required": false,
       "userEdit": true
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPアドレス",
+      "desc": "サーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": false
     },
     "javaversion": {
       "type": "string",
       "value": "25",
-      "display": "Java Version",
-      "desc": "Version of Java to use",
+      "display": "Javaバージョン",
+      "desc": "使用するJavaのバージョン",
       "required": true,
       "userEdit": true
     },
     "jvmArgs": {
       "type": "string",
       "value": "",
-      "display": "JVM Arguments",
-      "desc": "Extra JVM arguments to pass",
+      "display": "JVM引数",
+      "desc": "追加で渡すJVM引数",
       "required": false,
       "userEdit": false
     },
     "memory": {
       "type": "integer",
       "value": 2048,
-      "display": "Memory (MB)",
-      "desc": "How much memory in MB to allocate to the Java Heap",
+      "display": "メモリ (MB)",
+      "desc": "Javaヒープに割り当てるメモリ容量（MB単位）",
       "required": true,
       "userEdit": false
     },
     "modlauncher": {
       "type": "string",
       "value": "",
-      "display": "Mod/Plugin Launcher",
-      "desc": "What mod or plugin launcher should be installed with Minecraft",
+      "display": "Mod/プラグイン ローダー",
+      "desc": "Minecraftと一緒にインストールするModまたはプラグインローダー",
       "required": false,
       "userEdit": true,
       "options": [
         {
           "value": "",
-          "display": "None/Vanilla"
+          "display": "なし (バニラ)"
         },
         {
           "value": "fabric",
@@ -84,40 +84,40 @@
     "motd": {
       "type": "string",
       "value": "A Minecraft Server\\n\\u00A79 hosted on PufferPanel",
-      "display": "MOTD message of the day",
-      "desc": "This is the message that is displayed in the server list of the client, below the name. The MOTD does support <a href='https://minecraft.wiki/w/Formatting_codes' target='_blank'>color and formatting codes</a>.",
+      "display": "MOTD (今日のメッセージ)",
+      "desc": "サーバーリストの名前の下に表示されるメッセージです。<a href='https://minecraft.wiki/w/Formatting_codes' target='_blank'>カラー・装飾コード</a>をサポートしています。",
       "required": true,
       "userEdit": true
     },
     "neobuild": {
       "type": "string",
       "value": "",
-      "display": "NeoForge Version",
-      "desc": "<a href='https://neoforged.net/'>Version of NeoForge</a> to install. Example: `21.10.64` or `21.11.6-beta`",
+      "display": "NeoForgeバージョン",
+      "desc": "インストールする <a href='https://neoforged.net/'>NeoForgeのバージョン</a>。例: `21.10.64` または `21.11.6-beta`",
       "required": false,
       "userEdit": true
     },
     "paperbuild": {
       "type": "string",
       "value": "latest",
-      "display": "build",
-      "desc": "Build of Paper to install (<a href='https://papermc.io/downloads'>Paper version build</a>). Must be specified as a build number, e.g. `484`, or `latest`",
+      "display": "ビルド番号",
+      "desc": "インストールするPaperのビルド（<a href='https://papermc.io/downloads'>Paperビルド一覧</a>）。`484`のようなビルド番号、または`latest`を指定してください。",
       "required": false,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 25565,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート番号",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     },
     "version": {
       "type": "string",
       "value": "latest",
-      "display": "Version",
-      "desc": "Version of Minecraft you wish to install. It is best to put a version in, as latest may not work with all server software.",
+      "display": "バージョン",
+      "desc": "インストールするMinecraftのバージョン。`latest`は全てのサーバーソフトウェアで動作するとは限らないため、特定のバージョンを指定することを推奨します。",
       "required": true,
       "userEdit": true
     },
@@ -142,8 +142,8 @@
   },
   "groups": [
     {
-      "display": "General",
-      "description": "General settings for all servers",
+      "display": "基本設定",
+      "description": "サーバーの全般的な設定",
       "variables": [
         "eula",
         "memory",
@@ -159,8 +159,8 @@
     },
     {
       "if": "modlauncher == 'forge'",
-      "display": "Forge",
-      "description": "Settings if using MinecraftForge",
+      "display": "Forge設定",
+      "description": "MinecraftForgeを使用する場合の設定",
       "variables": [
         "forgebuild"
       ],
@@ -168,8 +168,8 @@
     },
     {
       "if": "modlauncher == 'neoforge'",
-      "display": "NeoForge",
-      "description": "Settings if using NeoForge",
+      "display": "NeoForge設定",
+      "description": "NeoForgeを使用する場合の設定",
       "variables": [
         "neobuild"
       ],
@@ -177,8 +177,8 @@
     },
     {
       "if": "modlauncher == 'paper'",
-      "display": "Paper",
-      "description": "Settings specific if using Paper",
+      "display": "Paper設定",
+      "description": "Paperを使用する場合の設定",
       "variables": [
         "paperbuild"
       ],

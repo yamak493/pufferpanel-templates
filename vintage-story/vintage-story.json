@@ -5,32 +5,32 @@
     "maxPlayers": {
       "type": "integer",
       "value": 16,
-      "display": "Max Players",
-      "desc": "Maximum number of players that can join the server",
+      "display": "最大プレイヤー数",
+      "desc": "サーバーに参加可能な最大人数",
       "required": true,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 42420,
-      "display": "Port",
-      "desc": "Port used to connect to the server",
+      "display": "ポート",
+      "desc": "サーバーへの接続に使用されるポート番号",
       "required": true,
       "userEdit": false
     },
     "version": {
       "type": "string",
       "value": "1.20.10",
-      "display": "version",
-      "desc": "Version of Vintage Story to install (e.g., 1.20.10), you can find the latest version here: https://account.vintagestory.at/downloads",
+      "display": "バージョン",
+      "desc": "インストールするVintage Storyのバージョン（例: 1.20.10）。最新バージョンはこちらで確認できます: https://account.vintagestory.at/downloads",
       "required": true,
       "userEdit": true
     },
     "dotnetversion": {
       "type": "string",
       "value": "8.0.15",
-      "display": ".NET Runtime Version",
-      "desc": ".NET Runtime Version",
+      "display": ".NETランタイムバージョン",
+      "desc": "使用する.NETランタイムのバージョン",
       "required": true,
       "userEdit": false
     }

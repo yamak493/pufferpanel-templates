@@ -6,32 +6,32 @@
     "gameServerPort": {
       "type": "integer",
       "value": 21025,
-      "display": "Server Port",
-      "desc": "Server Port",
+      "display": "サーバーポート",
+      "desc": "サーバーのポート番号",
       "required": true,
       "userEdit": false
     },
     "maxPlayers": {
       "type": "integer",
       "value": 8,
-      "display": "Maximum Players",
-      "desc": "Maximum Players",
+      "display": "最大プレイヤー数",
+      "desc": "サーバーへの最大同時参加人数",
       "required": true,
       "userEdit": true
     },
     "serverName": {
       "type": "string",
       "value": "A Starbound Server",
-      "display": "Server Name",
-      "desc": "Server Name",
+      "display": "サーバー名",
+      "desc": "サーバーの表示名",
       "required": true,
       "userEdit": true
     },
     "steamUser": {
       "type": "string",
       "value": "",
-      "display": "Steam Username",
-      "desc": "Steam Username (required for install)",
+      "display": "Steamユーザー名",
+      "desc": "Steamのユーザー名（インストールに必須）",
       "required": true,
       "userEdit": true
     }

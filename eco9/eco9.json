@@ -6,56 +6,56 @@
     "ServerName": {
       "type": "string",
       "value": "",
-      "display": "Name the Server",
-      "desc": "Server Name",
+      "display": "サーバー名",
+      "desc": "サーバーの名前を設定します",
       "required": true,
       "userEdit": true
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the Eco game server to.",
+      "display": "IPプロトコル",
+      "desc": "EcoゲームサーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": false
     },
     "maxcon": {
       "type": "integer",
       "value": -1,
-      "display": "Max Connections",
-      "desc": "Maximum Connections to Server (Player Limit, -1 is unlimited)",
+      "display": "最大接続数",
+      "desc": "サーバーへの最大同時接続数（プレイヤー制限、-1は無制限）",
       "required": true,
       "userEdit": true
     },
     "password": {
       "type": "string",
       "value": "",
-      "display": "Password",
-      "desc": "Password for the Eco Game Server, which will be required for login.",
+      "display": "パスワード",
+      "desc": "Ecoゲームサーバーへのログイン用パスワード",
       "required": false,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 3000,
-      "display": "Game-Server Port, port forward for external access",
-      "desc": "What port to bind the server to",
+      "display": "ゲームサーバーポート（要ポート開放）",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     },
     "upnp": {
       "type": "boolean",
       "value": false,
-      "display": "Do you wish to Enable uPnP?",
-      "desc": "Enable pnp?",
+      "display": "uPnPを有効にしますか？",
+      "desc": "uPnP（ユニバーサル・プラグ・アンド・プレイ）を有効にするかどうか",
       "required": true,
       "userEdit": false
     },
     "webServerPort": {
       "type": "integer",
       "value": 3001,
-      "display": "Web-Server Port",
-      "desc": "What port to bind the Eco web server to.",
+      "display": "Webサーバーポート",
+      "desc": "Ecoウェブサーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     }

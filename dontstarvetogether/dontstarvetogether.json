@@ -6,88 +6,88 @@
     "description": {
       "type": "string",
       "value": "Dont Starve Together Server",
-      "display": "Server Description",
-      "desc": "Description for the Server",
+      "display": "サーバーの説明",
+      "desc": "サーバーの詳細説明",
       "required": true,
       "userEdit": true
     },
     "gamemode": {
       "type": "option",
       "value": "",
-      "display": "Gamemode",
-      "desc": "The Gamemode you want to play in",
+      "display": "ゲームモード",
+      "desc": "プレイしたいゲームモードを選択してください",
       "required": true,
       "userEdit": true,
       "options": [
         {
           "value": "survival",
-          "display": "Survival"
+          "display": "サバイバル"
         },
         {
           "value": "wilderness",
-          "display": "Wilderness"
+          "display": "ウィルダネス"
         },
         {
           "value": "endless",
-          "display": "Endless"
+          "display": "エンドレス"
         }
       ]
     },
     "gamestyle": {
       "type": "option",
       "value": "",
-      "display": "Gamestyle",
-      "desc": "How do you want to play on your Server?",
+      "display": "ゲームスタイル",
+      "desc": "サーバーでどのようにプレイしたいですか？",
       "required": true,
       "userEdit": true,
       "options": [
         {
           "value": "social",
-          "display": "Social"
+          "display": "ソーシャル"
         },
         {
           "value": "cooperative",
-          "display": "Cooperative"
+          "display": "協力（Cooperative）"
         },
         {
           "value": "competetive",
-          "display": "Competetive"
+          "display": "対戦（Competetive）"
         },
         {
           "value": "madness",
-          "display": "Madness"
+          "display": "マッドネス"
         }
       ]
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPプロトコル",
+      "desc": "サーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": true
     },
     "maxplayers": {
       "type": "integer",
       "value": 5,
-      "display": "Max Players",
-      "desc": "How much Players can connect to your Server",
+      "display": "最大プレイヤー数",
+      "desc": "サーバーに接続可能な最大プレイヤー人数",
       "required": true,
       "userEdit": true
     },
     "password": {
       "type": "string",
       "value": "",
-      "display": "Password",
-      "desc": "(optional) The password, needed to connect to your Server",
+      "display": "パスワード",
+      "desc": "（任意）サーバーに接続するために必要なパスワード。不要な場合は空欄のままにしてください",
       "required": false,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 10889,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": true
     },
@@ -95,7 +95,7 @@
       "type": "boolean",
       "value": false,
       "display": "PvP",
-      "desc": "Should PvP activated on the Server?",
+      "desc": "サーバー上でPvPを有効にしますか？",
       "required": true,
       "userEdit": true
     },

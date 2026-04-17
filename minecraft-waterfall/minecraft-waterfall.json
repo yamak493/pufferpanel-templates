@@ -6,48 +6,48 @@
     "build": {
       "type": "string",
       "value": "510",
-      "display": "build",
-      "desc": "Build number",
+      "display": "ビルド番号",
+      "desc": "Waterfallのビルド番号",
       "required": true,
       "userEdit": false
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPアドレス",
+      "desc": "サーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": false
     },
     "memory": {
       "type": "integer",
       "value": 512,
-      "display": "Memory (MB)",
-      "desc": "How much memory in MB to allocate to the Waterfall server. It is generally recommended to allocated 512MB RAM for every 500 players. Please keep in mind that additional plugins may impact the amount needed in your case.",
+      "display": "メモリ (MB)",
+      "desc": "Waterfallサーバーに割り当てるメモリ容量（MB単位）。一般的にはプレイヤー500人ごとに512MBのメモリを割り当てることが推奨されます。追加のプラグインを使用する場合は、より多くのメモリが必要になる場合があることに注意してください。",
       "required": true,
       "userEdit": false
     },
     "motd": {
       "type": "string",
       "value": "A Waterfall Server &9hosted on PufferPanel",
-      "display": "MOTD message of the day",
-      "desc": "This is the message that is displayed in the server list of the client, below the name. The MOTD does support <a href='https://minecraft.wiki/w/Formatting_codes' target='_blank'>color and formatting codes</a>.",
+      "display": "MOTD (今日のメッセージ)",
+      "desc": "サーバーリストの名前の下に表示されるメッセージです。<a href='https://minecraft.wiki/w/Formatting_codes' target='_blank'>カラー・装飾コード</a>をサポートしています。",
       "required": true,
       "userEdit": false
     },
     "port": {
       "type": "integer",
       "value": 25577,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート番号",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     },
     "version": {
       "type": "string",
       "value": "1.19",
-      "display": "Version",
-      "desc": "Version of Minecraft to install. Must be specified as a <strong>minor release number</strong>, e.g. 1.16",
+      "display": "バージョン",
+      "desc": "インストールするMinecraftのバージョン（マイナーリリース番号で指定、例: 1.16）",
       "required": true,
       "userEdit": false
     }

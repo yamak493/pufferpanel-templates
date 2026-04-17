@@ -5,8 +5,8 @@
     "bot-js-file": {
       "type": "string",
       "value": "bot.js",
-      "display": "Main bot file",
-      "desc": "The main bot file.",
+      "display": "メインBotファイル",
+      "desc": "Botのメイン実行ファイル（例: bot.js）",
       "required": true,
       "userEdit": false
     }

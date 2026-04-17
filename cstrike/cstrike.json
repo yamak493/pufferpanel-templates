@@ -4,36 +4,36 @@
   "data": {
     "ip": {
       "type": "string",
-      "desc": "What IP to bind the server to",
-      "display": "IP",
+      "desc": "サーバーをバインドするIPアドレス",
+      "display": "IPプロトコル",
       "required": true,
       "value": "0.0.0.0"
     },
     "loadMap": {
       "type": "string",
-      "desc": "Map to load by default",
-      "display": "Map",
+      "desc": "デフォルトで読み込むマップ",
+      "display": "マップ",
       "required": true,
       "value": "de_dust2"
     },
     "maxplayers": {
       "type": "integer",
-      "desc": "Max players allowed on server",
-      "display": "Max Players",
+      "desc": "サーバーへの最大同時参加人数",
+      "display": "最大プレイヤー数",
       "required": true,
       "value": 20
     },
     "tickrate": {
       "type": "integer",
-      "desc": "Server tick speed, to use this value you need to download this addon: https://github.com/daemon32/tickrate_enabler/releases/tag/0.5",
-      "display": "Tickrate",
+      "desc": "サーバーのチックスピード。この値を使用するには、次のアドオンをダウンロードする必要があります: https://github.com/daemon32/tickrate_enabler/releases/tag/0.5",
+      "display": "チックレート",
       "required": true,
       "value": 66
     },
     "tvport": {
       "type": "integer",
-      "desc": "What port to bind the HLTV to",
-      "display": "HLTV Port",
+      "desc": "HLTVをバインドするポート番号",
+      "display": "HLTVポート",
       "required": true,
       "value": 27020
     }

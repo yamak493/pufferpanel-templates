@@ -6,56 +6,56 @@
     "clientport": {
       "type": "integer",
       "value": 27005,
-      "display": "Client Port",
-      "desc": "What port to bind the clientport to",
+      "display": "クライアントポート",
+      "desc": "バインドするクライアントポート番号",
       "required": true,
       "userEdit": false
     },
     "ip": {
       "type": "string",
       "value": "0.0.0.0",
-      "display": "IP",
-      "desc": "What IP to bind the server to",
+      "display": "IPアドレス",
+      "desc": "サーバーをバインドするIPアドレス",
       "required": true,
       "userEdit": false
     },
     "mapName": {
       "type": "string",
       "value": "de_dust2",
-      "display": "Map",
-      "desc": "Map to load by default",
+      "display": "マップ名",
+      "desc": "デフォルトで読み込むマップ",
       "required": true,
       "userEdit": true
     },
     "maxplayers": {
       "type": "integer",
       "value": 20,
-      "display": "Max Players",
-      "desc": "Max players allowed on server",
+      "display": "最大プレイヤー数",
+      "desc": "サーバーに参加可能な最大人数",
       "required": true,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 27015,
-      "display": "Port",
-      "desc": "What port to bind the server to",
+      "display": "ポート番号",
+      "desc": "サーバーをバインドするポート番号",
       "required": true,
       "userEdit": false
     },
     "tickrate": {
       "type": "integer",
       "value": 66,
-      "display": "Tickrate",
-      "desc": "Server tick speed, to use this value you need to download this addon: https://github.com/daemon32/tickrate_enabler/releases/tag/0.5",
+      "display": "チックレート",
+      "desc": "サーバーの更新速度（チックレート）。この値を使用するにはアドオンが必要です: https://github.com/daemon32/tickrate_enabler/releases/tag/0.5",
       "required": true,
       "userEdit": true
     },
     "tvport": {
       "type": "integer",
       "value": 27020,
-      "display": "SourceTV Port",
-      "desc": "What port to bind the SourceTV to",
+      "display": "SourceTVポート",
+      "desc": "SourceTVをバインドするポート番号",
       "required": true,
       "userEdit": false
     }

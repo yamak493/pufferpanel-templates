@@ -5,8 +5,8 @@
     "bot-py-file": {
       "type": "string",
       "value": "bot.py",
-      "display": "Main bot file",
-      "desc": "The main bot file.",
+      "display": "メインBotファイル",
+      "desc": "Botのメイン実行ファイル（例: bot.py）",
       "required": true,
       "userEdit": true
     }

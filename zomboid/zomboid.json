@@ -5,40 +5,40 @@
     "adminPassword": {
       "type": "string",
       "value": "password",
-      "display": "Admin Password",
-      "desc": "Password for admin account",
+      "display": "管理者パスワード",
+      "desc": "管理者アカウント（admin）用のパスワード",
       "required": true,
       "userEdit": true
     },
     "memory": {
       "type": "integer",
       "value": 4096,
-      "display": "Memory (MB)",
-      "desc": "Memory to allocate",
+      "display": "メモリ (MB)",
+      "desc": "サーバーに割り当てるメモリ容量（MB単位）",
       "required": true,
       "userEdit": true
     },
     "port": {
       "type": "integer",
       "value": 16261,
-      "display": "port",
-      "desc": "Base port (UDP) for server. Additional ports (TCP) beyond this will need to be opened. 1 per user.",
+      "display": "ポート番号",
+      "desc": "サーバーの基本ポート（UDP）。これ以外に、ユーザー1人につき1つのTCPポートを開放する必要があります。",
       "required": true,
       "userEdit": true
     },
     "serverName": {
       "type": "string",
       "value": "pufferserver",
-      "display": "serverName",
-      "desc": "Name of the PZ server",
+      "display": "サーバー名",
+      "desc": "Project Zomboidサーバーの名前",
       "required": false,
       "userEdit": true
     },
     "steamVAC": {
       "type": "boolean",
       "value": true,
-      "display": "steamVAC",
-      "desc": "Enable or disable Steam VAC",
+      "display": "Steam VAC",
+      "desc": "Steam VAC（不正対策）の有効/無効",
       "required": true,
       "userEdit": true
     }
