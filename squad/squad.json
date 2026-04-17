@@ -1,6 +1,6 @@
 {
   "type": "squad",
-  "display": "SQUAD Dedicated Server",
+  "display": "SQUAD",
   "data": {
     "fixed_max_players": {
       "type": "integer",

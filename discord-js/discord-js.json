@@ -1,6 +1,6 @@
 {
   "type": "discord",
-  "display": "discord.js",
+  "display": "Discord（NodeJS）",
   "data": {
     "bot-js-file": {
       "type": "string",

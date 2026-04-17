@@ -1,6 +1,6 @@
 {
   "type": "valheim",
-  "display": "Valheim Dedicated Server",
+  "display": "Valheim",
   "data": {
     "modpack": {
       "type": "string",

@@ -1,6 +1,6 @@
 {
   "type": "discord",
-  "display": "discord.py Bot",
+  "display": "Discord（Python）",
   "data": {
     "bot-py-file": {
       "type": "string",
