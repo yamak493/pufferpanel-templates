@@ -54,11 +54,6 @@
   },
   "install": [
     {
-      "if": "env == 'host'",
-      "type": "javadl",
-      "version": "21"
-    },
-    {
       "type": "paperdl",
       "build": "${build}",
       "minecraftVersion": "${version}",
@@ -67,15 +62,7 @@
     }
   ],
   "run": {
-    "command": [
-      {
-        "command": "java21 -Xmx${memory}M -Xms${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true -jar velocity.jar",
-        "if": "env == 'host'"
-      },
-      {
-        "command": "java -Xmx${memory}M -Xms${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true -jar velocity.jar"
-      }
-    ],
+    "command": "java -Xmx${memory}M -Xms${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true -jar velocity.jar",
     "stop": "shutdown",
     "stdin": {
       "type": "stdin"
@@ -85,12 +72,13 @@
     "autorestart": false
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "eclipse-temurin:21",
+    "portBindings": [
+      "0.0.0.0:${port}:${port}/tcp"
+    ]
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "eclipse-temurin:21",
@@ -99,7 +87,10 @@
       ]
     }
   ],
-  "requirements": {},
+  "requirements": {
+    "os": "linux",
+    "arch": "amd64"
+  },
   "stats": {
     "type": "jcmd"
   }

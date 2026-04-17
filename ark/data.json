@@ -2,7 +2,7 @@
   {
     "name": "ark",
     "environment": {
-      "type": "host"
+      "type": "docker"
     },
     "ignoreExitCode": true
   },

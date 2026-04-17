@@ -54,12 +54,6 @@
   },
   "install": [
     {
-      "if": "env == 'host'",
-      "type": "steamgamedl",
-      "appId": "4020"
-    },
-    {
-      "if": "env == 'docker'",
       "type": "command",
       "commands": [
         "steamcmd +force_install_dir /pufferpanel +login anonymous +app_update 4020 +quit"
@@ -83,12 +77,13 @@
     "autorestart": false
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "steamcmd/steamcmd",
+    "portBindings": [
+      "0.0.0.0:${port}:${port}/tcp"
+    ]
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "steamcmd/steamcmd",

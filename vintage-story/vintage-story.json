@@ -37,34 +37,6 @@
   },
   "install": [
     {
-      "if": "env == 'host'",
-      "type": "download",
-      "files": [
-        "https://dotnetcli.azureedge.net/dotnet/Runtime/${dotnetversion}/dotnet-runtime-${dotnetversion}-linux-x64.tar.gz"
-      ]
-    },
-    {
-      "if": "env == 'host'",
-      "type": "command",
-      "commands": [
-        "rm -rf dotnet",
-        "mkdir -p dotnet"
-      ]
-    },
-    {
-      "if": "env == 'host'",
-      "type": "extract",
-      "source": "dotnet-runtime-${dotnetversion}-linux-x64.tar.gz",
-      "destination": "dotnet"
-    },
-    {
-      "if": "env == 'host'",
-      "type": "command",
-      "commands": [
-        "rm -rf dotnet-runtime-${dotnetversion}-linux-x64.tar.gz"
-      ]
-    },
-    {
       "type": "download",
       "files": [
         "https://cdn.vintagestory.at/gamefiles/stable/vs_server_linux-x64_${version}.tar.gz"
@@ -87,27 +59,20 @@
     }
   ],
   "run": {
-    "command": [
-      {
-        "command": "./dotnet/dotnet VintagestoryServer.dll --dataPath ./data --port ${port} --maxclients ${maxPlayers}",
-        "if": "env == 'host'"
-      },
-      {
-        "command": "dotnet VintagestoryServer.dll --dataPath ./data --port ${port} --maxclients ${maxPlayers}"
-      }
-    ],
+    "command": "dotnet VintagestoryServer.dll --dataPath ./data --port ${port} --maxclients ${maxPlayers}",
     "stop": "/stop",
     "environmentVars": {
       "DOTNET_ROOT": "./dotnet"
     }
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "mcr.microsoft.com/dotnet/runtime:${dotnetversion}",
+    "portBindings": [
+      "0.0.0.0:${port}:${port}/tcp"
+    ]
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "mcr.microsoft.com/dotnet/runtime:${dotnetversion}",
@@ -117,6 +82,7 @@
     }
   ],
   "requirements": {
+    "os": "linux",
     "arch": "amd64"
   }
 }

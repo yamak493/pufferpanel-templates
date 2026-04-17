@@ -180,12 +180,13 @@
     "autorestart": false
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "pufferpanel/ubuntu",
+    "portBindings": [
+      "0.0.0.0:${server-port}:${server-port}/tcp"
+    ]
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "pufferpanel/ubuntu",

@@ -30,18 +30,17 @@
     "autorestart": false
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "python"
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "python"
     }
   ],
   "requirements": {
+    "os": "linux",
     "binaries": [
       "python3"
     ]

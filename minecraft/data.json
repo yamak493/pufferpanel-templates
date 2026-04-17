@@ -12,7 +12,7 @@
       "modlauncher": ""
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   },
   {
@@ -28,7 +28,7 @@
       "modlauncher": "fabric"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   },
   {
@@ -44,7 +44,7 @@
       "modlauncher": "forge"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   },
   {
@@ -61,7 +61,7 @@
       "paperbuild": "203"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   },
   {
@@ -78,7 +78,7 @@
       "paperbuild": "232"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   },
   {
@@ -95,7 +95,7 @@
       "neobuild": "21.11.6-beta"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   },
 

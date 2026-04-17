@@ -104,34 +104,6 @@
   },
   "install": [
     {
-      "if": "env == 'host'",
-      "type": "download",
-      "files": [
-        "https://dotnetcli.azureedge.net/dotnet/Runtime/${dotnetversion}/dotnet-runtime-${dotnetversion}-linux-${arch}.tar.gz"
-      ]
-    },
-    {
-      "if": "env == 'host'",
-      "type": "command",
-      "commands": [
-        "rm -rf dotnet",
-        "mkdir -p dotnet"
-      ]
-    },
-    {
-      "if": "env == 'host'",
-      "type": "extract",
-      "source": "dotnet-runtime-${dotnetversion}-linux-${arch}.tar.gz",
-      "destination": "dotnet"
-    },
-    {
-      "if": "env == 'host'",
-      "type": "command",
-      "commands": [
-        "rm -rf dotnet-runtime-linux-${arch}.tar.gz"
-      ]
-    },
-    {
       "type": "download",
       "files": [
         "https://github.com/Pryaxis/TShock/releases/download/v${tshockversion}/TShock-${tshockversion}-for-Terraria-${version}-linux-${arch}-Release.zip"
@@ -157,15 +129,7 @@
     }
   ],
   "run": {
-    "command": [
-      {
-        "command": "./TShock.Server -ip ${ip} -port ${port} -world /pufferpanel/worlds/world.wld -autocreate ${wsize} ${secure} --stats-optout",
-        "if": "env == 'docker'"
-      },
-      {
-        "command": "./TShock.Server -ip ${ip} -port ${port} -world ${rootDir}/worlds/world.wld -autocreate ${wsize} ${secure} --stats-optout"
-      }
-    ],
+    "command": "./TShock.Server -ip ${ip} -port ${port} -world /pufferpanel/worlds/world.wld -autocreate ${wsize} ${secure} --stats-optout",
     "stop": "exit",
     "environmentVars": {
       "DOTNET_ROOT": "./dotnet"
@@ -178,12 +142,13 @@
     "autorestart": false
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "mcr.microsoft.com/dotnet/runtime:${dotnetversion}",
+    "portBindings": [
+      "0.0.0.0:${port}:${port}/tcp"
+    ]
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "mcr.microsoft.com/dotnet/runtime:${dotnetversion}",

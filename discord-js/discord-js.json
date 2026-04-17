@@ -30,18 +30,17 @@
     "autorestart": false
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "node"
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "node"
     }
   ],
   "requirements": {
+    "os": "linux",
     "binaries": [
       "node",
       "npm"

@@ -70,19 +70,6 @@
   },
   "install": [
     {
-      "if": "env == 'host' && javaversion != ''",
-      "type": "javadl",
-      "version": "${javaversion}"
-    },
-    {
-      "if": "env == 'host'",
-      "type": "curseforge",
-      "projectId": "${projectId}",
-      "fileId": "${fileId}",
-      "java": "java${javaversion}"
-    },
-    {
-      "if": "env != 'host'",
       "type": "curseforge",
       "projectId": "${projectId}",
       "fileId": "${fileId}"
@@ -102,44 +89,20 @@
   "run": {
     "command": [
       {
-        "command": "java${javaversion} -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} -jar fabric-server-launch.jar nogui",
-        "if": "env == 'host' && file_exists('fabric-server-launch.jar')"
-      },
-      {
         "command": "java -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} -jar fabric-server-launch.jar nogui",
-        "if": "env != 'host' && file_exists('fabric-server-launch.jar')"
-      },
-      {
-        "command": "java${javaversion} -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} -jar server.jar nogui",
-        "if": "env == 'host' && file_exists('server.jar')"
+        "if": "file_exists('fabric-server-launch.jar')"
       },
       {
         "command": "java -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} -jar server.jar nogui",
-        "if": "env != 'host' && file_exists('server.jar')"
-      },
-      {
-        "command": "java${javaversion} -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} @libraries/net/minecraftforge/forge/${resolvedForgeVersion}/win_args.txt nogui",
-        "if": "env == 'host' && os == 'windows' && resolvedForgeVersion != ''"
-      },
-      {
-        "command": "java${javaversion} -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} @libraries/net/minecraftforge/forge/${resolvedForgeVersion}/unix_args.txt nogui",
-        "if": "env == 'host' && resolvedForgeVersion != ''"
+        "if": "file_exists('server.jar')"
       },
       {
         "command": "java -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} @libraries/net/minecraftforge/forge/${resolvedForgeVersion}/unix_args.txt nogui",
-        "if": "env != 'host' && resolvedForgeVersion != ''"
-      },
-      {
-        "command": "java${javaversion} -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} @libraries/net/neoforged/neoforge/${resolvedNeoForgeVersion}/win_args.txt nogui",
-        "if": "env == 'host' && os == 'windows' && resolvedNeoForgeVersion != ''"
-      },
-      {
-        "command": "java${javaversion} -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} @libraries/net/neoforged/neoforge/${resolvedNeoForgeVersion}/unix_args.txt nogui",
-        "if": "env == 'host' && resolvedNeoForgeVersion != ''"
+        "if": "resolvedForgeVersion != ''"
       },
       {
         "command": "java -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} @libraries/net/neoforged/neoforge/${resolvedNeoForgeVersion}/unix_args.txt nogui",
-        "if": "env != 'host' && resolvedNeoForgeVersion != ''"
+        "if": "resolvedNeoForgeVersion != ''"
       },
       {
         "command": "java -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true ${jvmArgs} -jar server.jar nogui"
@@ -164,12 +127,13 @@
     "autorestart": false
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "eclipse-temurin:${javaversion}",
+    "portBindings": [
+      "0.0.0.0:${port}:${port}/tcp"
+    ]
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "eclipse-temurin:${javaversion}",
@@ -178,7 +142,10 @@
       ]
     }
   ],
-  "requirements": {},
+  "requirements": {
+    "os": "linux",
+    "arch": "amd64"
+  },
   "stats": {
     "type": "jcmd"
   },

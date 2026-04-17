@@ -5,7 +5,7 @@
       "RConPassword": "123456789"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     },
     "runtimeRequirement": 10,
     "ignoreExitCode": true

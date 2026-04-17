@@ -54,11 +54,6 @@
   },
   "install": [
     {
-      "if": "env == 'host'",
-      "type": "javadl",
-      "version": "17"
-    },
-    {
       "type": "download",
       "files": [
         "https://api.papermc.io/v2/projects/waterfall/versions/${version}/builds/${build}/downloads/waterfall-${version}-${build}.jar"
@@ -76,15 +71,7 @@
     }
   ],
   "run": {
-    "command": [
-      {
-        "command": "java17 -Xmx${memory}M -Xms${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true -jar Waterfall.jar",
-        "if": "env == 'host'"
-      },
-      {
-        "command": "java -Xmx${memory}M -Xms${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true -jar Waterfall.jar"
-      }
-    ],
+    "command": "java -Xmx${memory}M -Xms${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Dlog4j2.formatMsgNoLookups=true -jar Waterfall.jar",
     "stop": "end",
     "stdin": {
       "type": "stdin"
@@ -94,12 +81,13 @@
     "autorestart": false
   },
   "environment": {
-    "type": "host"
+    "type": "docker",
+    "image": "eclipse-temurin:17",
+    "portBindings": [
+      "0.0.0.0:${port}:${port}/tcp"
+    ]
   },
   "supportedEnvironments": [
-    {
-      "type": "host"
-    },
     {
       "type": "docker",
       "image": "eclipse-temurin:17",
@@ -108,7 +96,10 @@
       ]
     }
   ],
-  "requirements": {},
+  "requirements": {
+    "os": "linux",
+    "arch": "amd64"
+  },
   "stats": {
     "type": "jcmd"
   }

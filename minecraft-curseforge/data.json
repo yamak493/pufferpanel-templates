@@ -11,7 +11,7 @@
       "fileId": "0"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   },
   {
@@ -26,7 +26,7 @@
       "fileId": "0"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   },
   {
@@ -41,7 +41,7 @@
       "fileId": "5181988"
     },
     "environment": {
-      "type": "host"
+      "type": "docker"
     }
   }
 ]
